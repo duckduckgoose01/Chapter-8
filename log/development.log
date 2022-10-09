@@ -2172,3 +2172,894 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 1.9ms | Allocations: 9944)
 
 
+Started GET "/" for 127.0.0.1 at 2022-10-08 20:21:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1002.5ms | Allocations: 132989)
+  Rendered layouts/_shim.html.erb (Duration: 0.7ms | Allocations: 109)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 297)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 1026.7ms | Allocations: 142117)
+Completed 200 OK in 1097ms (Views: 1034.4ms | ActiveRecord: 0.0ms | Allocations: 145531)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-10-08 20:21:49 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 15.4ms | Allocations: 2825)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 119)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 10675)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 11447)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-10-08 20:31:21 -0400
+  
+SyntaxError (/Users/davidshapiro/Desktop - Duck Duck Goose pro/Brandeis/Junior Year/Semester 1/Classes/Software Engineering/Programming Assignments/Ruby On Rails/Chapter 8/sample_app2 copy/app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/login" for 127.0.0.1 at 2022-10-08 20:31:51 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 18.4ms | Allocations: 3236)
+  Rendered layouts/_shim.html.erb (Duration: 1.1ms | Allocations: 139)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 304)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 196.4ms | Allocations: 64376)
+Completed 200 OK in 212ms (Views: 202.3ms | ActiveRecord: 0.0ms | Allocations: 67784)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-10-08 20:32:17 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"gkmkgk@gma.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gkmkgk@gma.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 724)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 119)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8559)
+Completed 422 Unprocessable Entity in 56ms (Views: 11.8ms | ActiveRecord: 21.0ms | Allocations: 15968)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-10-08 21:06:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 34.7ms | Allocations: 3248)
+  Rendered layouts/_shim.html.erb (Duration: 1.0ms | Allocations: 144)
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 466)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 311.5ms | Allocations: 65103)
+Completed 200 OK in 382ms (Views: 350.9ms | ActiveRecord: 0.0ms | Allocations: 68517)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-08 21:06:18 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1854)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 9731)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 10498)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-10-08 21:06:21 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 820)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 125)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 8464)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 8736)
+
+
+Started GET "/help" for 127.0.0.1 at 2022-10-08 21:06:41 -0400
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.6ms | Allocations: 124)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 7999)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 8321)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-10-08 21:06:42 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 791)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 125)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 8435)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 8686)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-08 21:06:43 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1478)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 125)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 9186)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 9433)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-10-08 21:06:46 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 1.1ms | Allocations: 115)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 7961)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 8262)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-08 21:06:47 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1478)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 125)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 9284)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 9532)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-10-08 21:06:55 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 794)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 125)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8529)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 8776)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-10-08 21:06:56 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 214)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2554)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 10349)
+Completed 200 OK in 46ms (Views: 14.8ms | ActiveRecord: 16.7ms | Allocations: 17240)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-10-08 21:07:13 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"David", "email"=>"david.shapiro27@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create an account"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (4.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "david.shapiro27@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "David"], ["email", "david.shapiro27@gmail.com"], ["created_at", "2022-10-09 01:07:13.837590"], ["updated_at", "2022-10-09 01:07:13.837590"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (34.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Redirected to http://127.0.0.1:3000/users/2
+Completed 302 Found in 312ms (ActiveRecord: 40.4ms | Allocations: 6550)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:07:13 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 306)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 140)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 8254)
+Completed 200 OK in 20ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 9950)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-10-08 21:07:23 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 806)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 125)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 8445)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 8693)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-10-08 21:07:35 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"david.shapiro27@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "david.shapiro27@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://127.0.0.1:3000/users/2
+Completed 302 Found in 261ms (ActiveRecord: 0.4ms | Allocations: 1148)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:07:35 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 3.1ms | Allocations: 1547)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 9203)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.5ms | Allocations: 9948)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-08 21:15:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 868.0ms | Allocations: 149882)
+  Rendered layouts/_shim.html.erb (Duration: 1.0ms | Allocations: 112)
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 457)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 916.2ms | Allocations: 187947)
+Completed 200 OK in 982ms (Views: 948.0ms | ActiveRecord: 0.0ms | Allocations: 191370)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-10-08 21:15:57 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 13.6ms | Allocations: 2766)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 12496)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 13279)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-10-08 21:16:14 -0400
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"david.shapiro27@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "david.shapiro27@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://127.0.0.1:3000/users/2
+Completed 302 Found in 276ms (ActiveRecord: 4.6ms | Allocations: 9209)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:16:15 -0400
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 308)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 12)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.3ms | Allocations: 1675)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 11755)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.5ms | Allocations: 13782)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:16:36 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 571)
+  Rendered layouts/_shim.html.erb (Duration: 1.0ms | Allocations: 139)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 4.7ms | Allocations: 2049)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 234.5ms | Allocations: 95320)
+Completed 200 OK in 270ms (Views: 240.3ms | ActiveRecord: 4.9ms | Allocations: 107468)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:16:38 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 73)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.1ms | Allocations: 773)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 10472)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 1.0ms | Allocations: 11288)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:16:38 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 8.8ms | Allocations: 773)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 10406)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.8ms | Allocations: 11181)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:20:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 571)
+  Rendered layouts/_shim.html.erb (Duration: 0.9ms | Allocations: 139)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 5.4ms | Allocations: 2049)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 234.9ms | Allocations: 95474)
+Completed 200 OK in 331ms (Views: 240.5ms | ActiveRecord: 5.5ms | Allocations: 107592)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:20:04 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 90)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 10)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 801)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 10626)
+Completed 200 OK in 18ms (Views: 14.2ms | ActiveRecord: 0.6ms | Allocations: 11532)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:20:05 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 65)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 773)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 10400)
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.7ms | Allocations: 11174)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:20:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.0ms | Allocations: 773)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 10510)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.4ms | Allocations: 11286)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:20:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 772)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 10471)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.6ms | Allocations: 11230)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:20:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 772)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 10408)
+Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 0.4ms | Allocations: 11166)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:20:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 772)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 10388)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.5ms | Allocations: 11146)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-10-08 21:20:07 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 65)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 773)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 10397)
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 0.5ms | Allocations: 11171)
+
+
+Started GET "/help" for 127.0.0.1 at 2022-10-08 21:20:08 -0400
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 2.9ms | Allocations: 155)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 12)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.3ms | Allocations: 930)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 10964)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.2ms | Allocations: 11726)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-08 21:20:09 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1657)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 764)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 11831)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.2ms | Allocations: 12181)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-08 21:22:24 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 242.8ms | Allocations: 74019)
+  Rendered layouts/_shim.html.erb (Duration: 1.0ms | Allocations: 109)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 27.1ms | Allocations: 9910)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 229)
+  Rendered layout layouts/application.html.erb (Duration: 306.9ms | Allocations: 121493)
+Completed 200 OK in 372ms (Views: 331.6ms | ActiveRecord: 6.7ms | Allocations: 124916)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:15:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 322.6ms | Allocations: 58283)
+  Rendered layouts/_shim.html.erb (Duration: 1.0ms | Allocations: 109)
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 70.2ms | Allocations: 9900)
+  Rendered layouts/_footer.html.erb (Duration: 1.5ms | Allocations: 229)
+  Rendered layout layouts/application.html.erb (Duration: 465.4ms | Allocations: 105877)
+Completed 200 OK in 489ms (Views: 439.7ms | ActiveRecord: 33.2ms | Allocations: 109303)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:25:45 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1820)
+  Rendered layouts/_shim.html.erb (Duration: 1.2ms | Allocations: 103)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 32.4ms | Allocations: 3543)
+  Rendered layouts/_footer.html.erb (Duration: 2.0ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 154.3ms | Allocations: 48632)
+Completed 200 OK in 159ms (Views: 157.3ms | ActiveRecord: 12.8ms | Allocations: 49509)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:25:49 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1480)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.0ms | Allocations: 776)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 11690)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.3ms | Allocations: 11978)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:25:52 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1478)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.3ms | Allocations: 775)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 11697)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.4ms | Allocations: 11960)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:26:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 255.9ms | Allocations: 73811)
+  Rendered layouts/_shim.html.erb (Duration: 1.1ms | Allocations: 109)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 30.9ms | Allocations: 9922)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 337.6ms | Allocations: 121325)
+Completed 200 OK in 353ms (Views: 332.4ms | ActiveRecord: 11.3ms | Allocations: 124750)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:26:16 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1600)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 10)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.0ms | Allocations: 857)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 11999)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 12327)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:35:10 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1478)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 21.5ms | Allocations: 3108)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 14000)
+Completed 200 OK in 50ms (Views: 47.5ms | ActiveRecord: 8.2ms | Allocations: 14261)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:35:13 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1478)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.4ms | Allocations: 775)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 11688)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 11954)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:35:13 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1478)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 9.5ms | Allocations: 764)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 11682)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.2ms | Allocations: 11943)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:38:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 258.8ms | Allocations: 57256)
+  Rendered layouts/_shim.html.erb (Duration: 1.1ms | Allocations: 109)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 31.1ms | Allocations: 9910)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 229)
+  Rendered layout layouts/application.html.erb (Duration: 335.1ms | Allocations: 104857)
+Completed 200 OK in 396ms (Views: 332.5ms | ActiveRecord: 10.8ms | Allocations: 108281)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:39:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 164.6ms | Allocations: 57479)
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 109)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 30.0ms | Allocations: 9918)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 229)
+  Rendered layout layouts/application.html.erb (Duration: 237.0ms | Allocations: 105103)
+Completed 200 OK in 281ms (Views: 246.2ms | ActiveRecord: 12.4ms | Allocations: 108527)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:39:24 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1596)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 10)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 3.0ms | Allocations: 857)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 11981)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.3ms | Allocations: 12307)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:39:25 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1478)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 3.2ms | Allocations: 775)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 11694)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.5ms | Allocations: 11957)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:39:26 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1482)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 775)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 11679)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.2ms | Allocations: 11944)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:39:27 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1478)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 775)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 11687)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms | Allocations: 11951)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:40:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 251.4ms | Allocations: 75864)
+  Rendered layouts/_shim.html.erb (Duration: 1.2ms | Allocations: 109)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 29.1ms | Allocations: 9918)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 229)
+  Rendered layout layouts/application.html.erb (Duration: 320.9ms | Allocations: 123334)
+Completed 200 OK in 390ms (Views: 329.4ms | ActiveRecord: 7.0ms | Allocations: 126757)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:40:20 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1521)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 10)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.9ms | Allocations: 857)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 11881)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.3ms | Allocations: 12208)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:40:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 251.4ms | Allocations: 76457)
+  Rendered layouts/_shim.html.erb (Duration: 1.2ms | Allocations: 109)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 27.9ms | Allocations: 9918)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 229)
+  Rendered layout layouts/application.html.erb (Duration: 326.8ms | Allocations: 123939)
+Completed 200 OK in 391ms (Views: 349.6ms | ActiveRecord: 7.7ms | Allocations: 127362)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:40:49 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1521)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 10)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.4ms | Allocations: 857)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 11920)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.4ms | Allocations: 12247)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:41:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 159.9ms | Allocations: 61852)
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 109)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 23.8ms | Allocations: 9918)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 229)
+  Rendered layout layouts/application.html.erb (Duration: 222.0ms | Allocations: 109457)
+Completed 200 OK in 282ms (Views: 228.1ms | ActiveRecord: 7.1ms | Allocations: 112881)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:41:37 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1596)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 10)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.7ms | Allocations: 857)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 11972)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.5ms | Allocations: 12300)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-10-09 10:41:38 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 214)
+  Rendered users/new.html.erb within layouts/application (Duration: 20.4ms | Allocations: 4078)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 12)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.2ms | Allocations: 907)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 67)
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 14574)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.3ms | Allocations: 15398)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:41:45 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1483)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.3ms | Allocations: 775)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 11695)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.2ms | Allocations: 11997)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:41:46 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1478)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.1ms | Allocations: 775)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 11689)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.3ms | Allocations: 11954)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-09 10:43:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 226.0ms | Allocations: 57337)
+  Rendered layouts/_shim.html.erb (Duration: 1.0ms | Allocations: 109)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:9:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 26.6ms | Allocations: 9919)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 229)
+  Rendered layout layouts/application.html.erb (Duration: 296.4ms | Allocations: 104962)
+Completed 200 OK in 356ms (Views: 313.3ms | ActiveRecord: 7.8ms | Allocations: 108388)
+
+
